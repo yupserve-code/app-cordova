@@ -1,0 +1,43 @@
+{
+    "logs": [
+        {
+            "outputFile": "E:\\PhoneGap\\YupServe\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeFreeReleaseResources\\merged.dir\\values-my\\values-my.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\User24\\.gradle\\caches\\transforms-1\\files-1.1\\firebase-messaging-11.8.0.aar\\4166fc3f2390bcce97156cdb890c0652\\res\\values-my\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "241",
+                        "endColumns": "101",
+                        "endOffsets": "342"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "318",
+                        "endColumns": "105",
+                        "endOffsets": "419"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\User24\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-11.8.0.aar\\851a1eb689dd52471324bc51af805a05\\res\\values-my\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "283",
+                        "endColumns": "212",
+                        "endOffsets": "495"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "105",
+                        "endColumns": "212",
+                        "endOffsets": "313"
+                    }
+                }
+            ]
+        }
+    ]
+}

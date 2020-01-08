@@ -1,0 +1,4 @@
+#Sat Oct 19 20:49:18 IST 2019
+base.0=E\:\\PhoneGap\\YupServe\\platforms\\android\\app\\build\\intermediates\\transforms\\dex\\free\\release\\0
+path.0=classes.dex
+renamed.0=classes.dex

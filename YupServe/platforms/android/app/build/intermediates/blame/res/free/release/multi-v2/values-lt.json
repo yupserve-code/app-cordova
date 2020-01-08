@@ -1,0 +1,60 @@
+{
+    "logs": [
+        {
+            "outputFile": "E:\\PhoneGap\\YupServe\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeFreeReleaseResources\\merged.dir\\values-lt\\values-lt.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\User24\\.gradle\\caches\\transforms-1\\files-1.1\\firebase-messaging-11.8.0.aar\\4166fc3f2390bcce97156cdb890c0652\\res\\values-lt\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "241",
+                        "endColumns": "101",
+                        "endOffsets": "342"
+                    },
+                    "to": {
+                        "startLines": "22",
+                        "startColumns": "4",
+                        "startOffsets": "2325",
+                        "endColumns": "105",
+                        "endOffsets": "2426"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\User24\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-11.8.0.aar\\851a1eb689dd52471324bc51af805a05\\res\\values-lt\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "283",
+                        "endColumns": "217",
+                        "endOffsets": "500"
+                    },
+                    "to": {
+                        "startLines": "21",
+                        "startColumns": "4",
+                        "startOffsets": "2107",
+                        "endColumns": "217",
+                        "endOffsets": "2320"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\User24\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.2.1.aar\\eb038f2c5f8bcf12063fa7a9cbdd857b\\res\\values-lt\\values-lt.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,171,279,402,503,616,703,812,933,1015,1096,1181,1290,1399,1499,1609,1713,1826,1956,2057",
+                        "endColumns": "115,107,122,100,112,86,108,120,81,80,84,108,108,99,109,103,112,129,100,100",
+                        "endOffsets": "166,274,397,498,611,698,807,928,1010,1091,1176,1285,1394,1494,1604,1708,1821,1951,2052,2153"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,23",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,221,329,452,553,666,753,862,983,1065,1146,1231,1340,1449,1549,1659,1763,1876,2006,2431",
+                        "endColumns": "115,107,122,100,112,86,108,120,81,80,84,108,108,99,109,103,112,129,100,100",
+                        "endOffsets": "216,324,447,548,661,748,857,978,1060,1141,1226,1335,1444,1544,1654,1758,1871,2001,2102,2527"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,134 @@
+<div class="page" data-name="request-booking">
+  <div class="navbar" id="request-booking-navbar">
+    <div class="navbar-inner">
+      <div class="left">
+        <a href="#" class="link" id="req-book-back-button">
+          <i class="icon icon-back"></i>
+
+        </a>
+      </div>
+      <div class="title">Request Booking</div>
+      <!-- <div class="right">
+        <a href="/notification/" class="link icon-only">
+          <i class="icon f7-icons ios-only">bell<span class="badge color-red">..</span></i>
+          <i class="icon material-icons md-only">notifications_none<span class="badge color-red">12</span></i>
+        </a>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="page-content gray-bg" id="request-booking-main-layout">
+
+    <div class="card elevation-1" id="calendar-layout">
+      <div class="card-header heading-text">Select Date</div>
+      <div class="clearfix"></div>
+      <div class="list media-list card-inner-padding profile-list">
+        <div id="demo-calendar-inline-container"></div>
+      </div>
+    </div>
+
+    <div class="card elevation-1 mt-30 mb-15" id="time-slot-avail-layout">
+      <div class="card-header heading-text">Select Time Slot</div>
+      <div class="clearfix"></div>
+      <div class="list media-list card-inner-padding profile-list" id="time-slot-layout">
+        <div class="row select-time-slot" style="margin: 10px 0" id="time_slots">
+          <!-- <button class="col-33 button button-raised button-fill button-round">08:00 AM</button>
+          <button class="col-33 button button-raised button-fill button-round">08:30 AM</button>
+          <button class="col-33 button button-raised button-fill button-round">09:00 AM</button> -->
+        </div>
+        <div class="row show-empty-time-slot" id="empty-image-hide">
+
+          <img src="images/empty-time-slot.svg" class="empty-image" />
+          <p class="empty-message" id="message_empty"></p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="card elevation-1 mt-30 mb-15" id="appoint-layout">
+      <div class="card-header heading-text">Appointment Details</div>
+      <div class="clearfix"></div>
+      <div class="list media-list card-inner-padding">
+        <!-- Address form -->
+        <form id="addressFrom" class="">
+
+          <input type="hidden" id="time-slot" name="time-slot">
+
+          <div class="list">
+            <ul>
+              <li class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-title item-floating-label">Address</div>
+                  <div class="item-input-wrap">
+                    <textarea class="resizable" id="userStreetAddress" placeholder="Enter street address" maxlength="80"></textarea>
+                  </div>
+                  <div class="label-1">
+                    <span id="user-address-invalid" class="hidden mob-helpers">
+                      <p class="fa fa-times invalid" id="user-street-address-error">Enter your
+                        address.</p>
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-title item-floating-label">PIN Code</div>
+                  <div class="item-input-wrap">
+                    <input type="number" id="userPinCode" placeholder="Enter PIN code" maxlength="6" oninput="javascript: if (this.value.length > 6) this.value = this.value.slice(0, 6);">
+                  </div>
+                  <div class="label-1">
+                    <span id="user-pin-invalid" class="hidden mob-helpers">
+                      <p class="fa fa-times invalid" id="user-pin-code-error">Enter your PIN
+                        code.</p>
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-title item-floating-label">City</div>
+                  <div class="item-input-wrap">
+                    <input type="text" id="userCity" placeholder="Enter your city name" value="Bhubaneswar" readonly>
+                  </div>
+                  <div class="label-1">
+                    <span id="user-city-invalid" class="hidden mob-helpers">
+                      <p class="fa fa-times invalid" id="user-city-error">Enter your city
+                        name.</p>
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-title item-floating-label">State</div>
+                  <div class="item-input-wrap">
+                    <input type="text" id="userState" placeholder="Enter state name" value="Odisha" readonly>
+                  </div>
+                  <div class="label-1">
+                    <span id="user-state-invalid" class="hidden mob-helpers">
+                      <p class="fa fa-times invalid" id="user-state-error">Enter your state
+                        name.</p>
+                    </span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </form>
+        <div class="list mb-15">
+          <ul>
+            <li>
+              <!-- Please remove the anchor tag after validation -->
+              <a href="#" id="Booking_button">
+                <div class="signup-button-container-layout item-link list-button whole-app-btn book-button">Proceed
+                  </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>

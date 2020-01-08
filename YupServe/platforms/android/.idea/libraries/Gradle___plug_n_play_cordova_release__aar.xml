@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: :plug-n-play-cordova-release:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/plug-n-play-cordova-release.aar/911193e73efc56b966344a48c1c1f021/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/plug-n-play-cordova-release.aar/911193e73efc56b966344a48c1c1f021/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

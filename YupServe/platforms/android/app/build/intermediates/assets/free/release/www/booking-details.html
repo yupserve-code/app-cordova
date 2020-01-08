@@ -1,0 +1,268 @@
+<div class="page" data-name="booking-details">
+  <div class="navbar">
+    <div class="navbar-inner" id="booking-details-navbar">
+      <div class="left">
+        <a href="#" class="link" id="booking-details-back-button">
+          <i class="icon icon-back"></i>
+        </a>
+      </div>
+      <div class="title">Booking Details</div>
+    </div>
+  </div>
+  <div class="page-content gray-bg">
+    <div class="page-contentgray-bg" id="contain-layout-booking-details">
+
+      <div class="card mt-20">
+        <div class="card-header heading-text">
+          <span id="serviceName"></span>
+          <span class="otp-booking" id="serviceOtp"></span>
+        </div>
+
+        <div class="clearfix"></div>
+        <div class="list media-list card-inner-padding">
+          <table class="mrg-top-btm customers">
+
+            <tr>
+              <td style="width:30%">Booking ID </td>
+              <td style="width:45%" id="bookingID"></td>
+            </tr>
+
+            <tr>
+              <td>Booked On </td>
+              <td id="bookingOn"></td>
+            </tr>
+
+            <tr>
+              <td>Scheduled On </td>
+              <td id="scheduleDate"></td>
+            </tr>
+
+            <tr>
+              <td>Time Slot </td>
+              <td id="scheduleTime"></td>
+            </tr>
+
+            <tr>
+              <td>Status </td>
+              <td>
+                <div class="block">
+                  <p class="status-cont">
+                    <span class="status-btn green" id="statusColor"></span><span id="bookingStatus">Active</span>
+                  </p>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Address </td>
+              <td id="userAddress"></td>
+            </tr>
+
+            <tr>
+              <td style="vertical-align:middle">Service Details </td>
+              <td id="subList">
+                <ul id="service-sub-list-data">
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="vertical-align:middle">Payment Status </td>
+              <td>
+                <div class="block">
+                  <p class="status-cont">
+                    <div><span class="status-btn orange" id="payment-status-circle-color"></span><span id="paymentStatus">Pending</span></div>
+                  </p>
+                </div>
+              </td>
+            </tr>
+
+            <tr id="booking-details-view-invoice-layout">
+              <td>View Proforma Invoice </td>
+              <td>
+                <div class="block">
+                  <p class="status-cont">
+                    <a id="invoice-anchor" href="#" class="link external" target="_system"><i class="material-icons">cloud_download</i>Download</a>
+                  </p>
+                </div>
+              </td>
+            </tr>
+
+          </table>
+          <div class="list" id="viewCancelBookingLayout">
+            <ul>
+              <li>
+                <button class="signup-button-container-layout item-link list-button whole-app-btn viewInvoiceButton">Cancel Booking</button>
+              </li>
+            </ul>
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="card demo-facebook-card" id="service-boy-layout">
+
+        <div class="card-header service-boy-heading-text">Service Boy Details</div>
+
+        <div class="card-header">
+          <div class="demo-facebook-avatar service-boy-image"><img src="https://cdn.framework7.io/placeholder/people-68x68-1.jpg" id="servboy-image"/></div>
+          <div class="demo-facebook-name" id="serviceBoyName"></div>
+          <div class="demo-facebook-date" id="serviceBoyMobile"></div>
+        </div>
+
+        <div class="card-content card-content-padding">
+
+          <p class="ser-boy-rating-text">Rating</p>
+          <span class="badge color-orange ser-boy-rating-value" id="serviceBoyRating"></span>
+          
+        </div>
+
+        <div class="clearfix"></div>
+      </div>
+
+
+
+     <!--  <div class="card mt-20" id="service-boy-layout">
+        <div class="card-header heading-text">Service Boy Details</div>
+
+
+        <div class="clearfix"></div>
+        <div class="list media-list card-inner-padding">
+          <table class="mrg-top-btm customers">
+
+            <tr>
+              <td style="width:30%">Name </td>
+              <td style="width:45%" id="serviceBoyName"></td>
+            </tr>
+            <tr>
+              <td>Mobile No. </td>
+              <td id="serviceBoyMobile"></td>
+            </tr>
+          </table>
+        </div>
+      </div> -->
+
+
+
+      <div class="card mt-20" id="service-requirement-layout">
+        <div class="card-header heading-text">Service Requirement</div>
+
+        <div class="clearfix"></div>
+        <div class="list media-list card-inner-padding">
+
+          <ul id="extra-req-text" style="margin: 10px auto;">
+
+          </ul>
+
+          <ul id="extraRequirementImage">
+            <!-- <li style="display:inline;">
+              <a href="/#/">
+                <img src="images/room1.png" id="image1" style="width: 40px; height: 40px; margin-left: 5px;" />
+              </a>
+            </li> -->
+          </ul>
+
+        </div>
+
+        <div class="clearfix"></div>
+        <div>
+          <a href="#" class="link" style="margin: 10px"><button class="col button button-fill color-red" id="extra-req-cancel-button">Cancel</button></a>
+          <a href="#" class="link" style="margin: 10px; float:right;"><button class="col button button-fill color-green"
+              id="extra-req-approve-button">Approve</button></a>
+        </div>
+
+      </div>
+
+      <div class="card mt-20" id="payment-details-layout">
+        <div class="card-header heading-text">Payment Details</div>
+
+        <div class="clearfix"></div>
+        <div class="list media-list card-inner-padding">
+          <table class="mrg-top-btm customers">
+
+            <tr>
+              <td style="width:30%">Payment Type </td>
+              <td style="width:45%" id="paymentType"></td>
+            </tr>
+            <tr id="paymentTypeLayout">
+              <td style="width:30%">Payment Date </td>
+              <td style="width:45%" id="paymentDate"></td>
+            </tr>
+            <tr>
+              <td>Service Cost </td>
+              <td id="serviceCost"></td>
+            </tr>
+            <tr class="hidden">
+              <td>GST </td>
+              <td id="serviceTax"></td>
+            </tr>
+            <tr>
+              <td>Discount </td>
+              <td id="serviceDiscount"></td>
+            </tr>
+            <tr>
+              <td style="color: #000; font-weight: bold">Total </td>
+              <td style="color: #000; font-weight: bold" id="serviceTotalAmount"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="card" id="history-layout">
+        <div class="list">
+          <ul>
+            <li class="accordion-item" style="border-bottom: none">
+              <a href="#" class="item-content item-link">
+                <div class="item-inner">
+                  <div class="heading-text" style="margin-left: 8px">History</div>
+                </div>
+              </a>
+              <div class="clearfix"></div>
+              <div class="accordion-item-content" style="padding-left: 0px !important;">
+                <div class="list media-list card-inner-padding" style="background-color: #ffffff">
+                  <ul class="my-booking" id="all-history-layout">
+                    <li>
+                      <table id="customers" class="mrg-top-btm">
+                        <tr id="historyStatusDateLayout">
+                          <td style="width:45%">
+                            <span class="status-btn green" id="historyStatusColor"></span>
+                            <span id="historyStatus">Payment</span>
+                            <span style="font-size: 12px; color: rgb(112, 111, 111); display: block;" id="historyStatusDate"></span>
+                          </td>
+                        </tr>
+                      </table>
+
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="list" id="serviceEndLayout">
+        <ul>
+          <li>
+            <button class="signup-button-container-layout item-link list-button whole-app-btn serviceEndButton">End</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="list" id="viewInvoiceLayout">
+        <ul>
+          <li>
+            <button class="signup-button-container-layout item-link list-button whole-app-btn" id="viewInvoiceButton">View
+              Invoice</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--Cordova Js Link-->
+<script type="text/javascript" src="cordova.js"></script>

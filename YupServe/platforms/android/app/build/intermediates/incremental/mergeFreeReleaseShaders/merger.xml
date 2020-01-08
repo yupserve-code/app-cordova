@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="E:\PhoneGap\YupServe\platforms\android\app\src\main\shaders"/></dataSet><dataSet config="free"><source path="E:\PhoneGap\YupServe\platforms\android\app\src\free\shaders"/></dataSet><dataSet config="release"><source path="E:\PhoneGap\YupServe\platforms\android\app\src\release\shaders"/></dataSet><dataSet config="freeRelease"><source path="E:\PhoneGap\YupServe\platforms\android\app\src\freeRelease\shaders"/></dataSet></merger>

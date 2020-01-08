@@ -1,0 +1,151 @@
+<div class="page" data-name="edit-profile">
+    <div class="navbar">
+          <div class="navbar-inner">
+                <div class="left">
+                      <a href="/profile/" class="link">
+                            <i class="icon icon-back"></i>
+                      </a>
+                </div>
+                <div class="title">Edit Profile</div>
+          </div>
+    </div>
+    <!-- page-content has additional login-screen content -->
+    <div class="page-content">
+
+      <div class="login-screen-content">    
+          <div class="edit-profile" style="margin-bottom: 20px; margin-top: 30px;">
+                <img src="images/boy.png" />
+          </div>
+          <!-- Edit Profile form -->
+          <form id="editProfileForm" class="form-ajax-submit">
+                <div class="list">
+                      <ul>
+                            <li class="item-content item-input">
+                                  <div class="item-inner">
+                                        <div class="item-title edit-header-leable">First Name</div>
+                                        <div class="item-input-wrap">
+                                              <input type="text" id="editUserFirstName" placeholder="Enter your first name" autocomplete="off">
+                                        </div>
+                                        <div class="label-1">
+                                              <span id="edit-first-name-invalid" class="hidden mob-helpers">
+                                                    <p class="fa fa-times invalid" id="edit-first-name-error">Enter your first name.</p>
+                                              </span>
+                                        </div>
+                                  </div>
+                            </li>
+                            <li class="item-content item-input">
+                                  <div class="item-inner">
+                                        <div class="item-title edit-header-leable">Last Name</div>
+                                        <div class="item-input-wrap">
+                                              <input type="text" id="editUserLastName" placeholder="Enter your last name" autocomplete="off">
+                                        </div>
+                                        <div class="label-1">
+                                              <span id="edit-last-name-invalid" class="hidden mob-helpers">
+                                                    <p class="fa fa-times invalid" id="edit-last-name-error">Enter your last name.</p>
+                                              </span>
+                                        </div>
+                                  </div>
+                            </li>
+                            <li class="item-content item-input">
+                                  <div class="item-inner">
+                                        <div class="item-title edit-header-leable">Email</div>
+                                        <div class="item-input-wrap">
+                                              <input type="email" id="editUseremail" placeholder="Enter your email" autocomplete="off" disabled>
+                                        </div>
+                                        <div class="label-1">
+                                              <span id="edit-email-invalid" class="hidden mob-helpers">
+                                                    <p class="fa fa-times invalid" id="edit-email-error">Enter your valid
+                                                          email.</p>
+                                              </span>
+                                        </div>
+                                  </div>
+                            </li>
+                            <li class="item-content item-input">
+                                  <div class="item-inner">
+                                        <div class="item-title edit-header-leable">Mobile</div>
+                                        <div class="item-input-wrap">
+                                              <input type="number" id="editUsermobile" placeholder="Enter your mobile number"
+                                                    oninput="javascript: if (this.value.length > 10) this.value = this.value.slice(0, 10);" autocomplete="off" disabled>
+                                        </div>
+                                        <div class="label-1">
+                                              <span id="edit-mobile-invalid" class="hidden mob-helpers">
+                                                    <p class="fa fa-times invalid" id="edit-mobile-error">Enter your 10
+                                                          digit mobile number.</p>
+                                              </span>
+                                        </div>
+                                  </div>
+                            </li>
+                            <li class="item-content item-input">
+                                  <div class="item-inner">
+                                        <div class="item-title edit-header-leable">Address</div>
+                                        <div class="item-input-wrap">
+                                              <input type="text" id="editUseraddress" placeholder="Enter street address" autocomplete="off">
+                                        </div>
+                                        <div class="label-1">
+                                              <span id="edit-address-invalid" class="hidden mob-helpers">
+                                                    <p class="fa fa-times invalid" id="edit-address-error">Enter your
+                                                          address.</p>
+                                              </span>
+                                        </div>
+                                  </div>
+                            </li>
+                            <li class="item-content item-input">
+                                  <div class="item-inner">
+                                        <div class="item-title edit-header-leable">PIN Code</div>
+                                        <div class="item-input-wrap">
+                                              <input type="number" id="editUserPIN" placeholder="Enter PIN code"
+                                                    maxlength="6" oninput="javascript: if (this.value.length > 6) this.value = this.value.slice(0, 6);" autocomplete="off">
+                                        </div>
+                                        <div class="label-1">
+                                              <span id="edit-pin-invalid" class="hidden mob-helpers">
+                                                    <p class="fa fa-times invalid" id="edit-pin-error">Enter your PIN
+                                                          code.</p>
+                                              </span>
+                                        </div>
+                                  </div>
+                            </li>
+                            <li class="item-content item-input">
+                                  <div class="item-inner">
+                                        <div class="item-title edit-header-leable">City</div>
+                                        <div class="item-input-wrap">
+                                              <input type="text" id="editUsercity" placeholder="Enter your city name" autocomplete="off">
+                                        </div>
+                                        <div class="label-1">
+                                              <span id="edit-city-invalid" class="hidden mob-helpers">
+                                                    <p class="fa fa-times invalid" id="edit-city-error">Enter your city
+                                                          name.</p>
+                                              </span>
+                                        </div>
+                                  </div>
+                            </li>
+                            <li class="item-content item-input">
+                                  <div class="item-inner">
+                                        <div class="item-title edit-header-leable">State</div>
+                                        <div class="item-input-wrap">
+                                              <input type="text" id="editUserstate" placeholder="Enter state name" autocomplete="off">
+                                        </div>
+                                        <div class="label-1">
+                                              <span id="edit-state-invalid" class="hidden mob-helpers">
+                                                    <p class="fa fa-times invalid" id="edit-state-error">Enter your state
+                                                          name.</p>
+                                              </span>
+                                        </div>
+                                  </div>
+                            </li>
+                      </ul>
+                </div>
+                <div class="list">
+                      <!-- <ul>
+                            <li><a class="item-link list-button whole-app-btn" href="/login/">Submit</a></li>
+                      </ul> -->
+                      <ul>
+                            <li>
+                                  <div class="signup-button-container-layout item-link list-button whole-app-btn edit-button">Save</div>
+                            </li>
+                      </ul>
+                </div> 
+          </form>
+
+      </div>
+    </div>
+</div>

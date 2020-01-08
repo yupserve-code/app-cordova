@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="E:\PhoneGap\YupServe\platforms\android\app\src\main\jniLibs"/></dataSet><dataSet config="free"><source path="E:\PhoneGap\YupServe\platforms\android\app\src\free\jniLibs"/></dataSet><dataSet config="release"><source path="E:\PhoneGap\YupServe\platforms\android\app\src\release\jniLibs"/></dataSet><dataSet config="freeRelease"><source path="E:\PhoneGap\YupServe\platforms\android\app\src\freeRelease\jniLibs"/></dataSet></merger>

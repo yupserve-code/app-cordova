@@ -1,0 +1,163 @@
+<div class="page" data-name="payment" id="payment-details-screen">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="left">
+        <a href="#" class="link" id="payment-details-back-button">
+          <i class="icon icon-back"></i>
+
+        </a>
+      </div>
+      <div class="title">Payment</div>
+    </div>
+  </div>
+
+  <div class="page-content gray-bg">
+
+    <div class="card elevation-1">
+      <div class="card-header heading-text">Billing Details<span></span></div>
+
+      <div class="clearfix"></div>
+      <div class="list media-list card-inner-padding">
+        <table class="mrg-top-btm customers">
+
+          <tr>
+            <td style="width:30%">Order ID </td>
+            <td style="width:45%" id="payment-order-id">123457890</td>
+          </tr>
+          <tr>
+            <td style="vertical-align:top">Service Details </td>
+            <td>
+              <ul id="payment-sub-services">
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>Total </td>
+            <td id="payment-price"></td>
+          </tr>
+
+          <!-- <tr>
+            <td>View Proforma Invoice </td>
+            <td>
+              <div class="block" id="download-invoice">
+                <p class="status-cont">
+                  <a href="#"><i class="material-icons">cloud_download</i>Download</a>
+                </p>
+              </div>
+            </td>
+          </tr> -->
+
+          <tr id="booking-details-view-invoice-layout">
+            <td>View Proforma Invoice </td>
+            <td>
+              <div class="block">
+                <p class="status-cont">
+                  <a id="invoice-anchor_payment" href="#" class="link external" target="_system"><i class="material-icons">cloud_download</i>Download</a>
+                </p>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              <label class="item-checkbox item-content">
+                <input type="checkbox" class="row_checkbox" name="demo-checkbox" value="Agree" />
+                <i class="icon icon-checkbox"></i>
+                <div class="">
+                  <div><a class="link popup-open" href="#" data-popup=".popup-about" id="popup">I have read and accepted the Terms
+                      & Conditions and Privacy Policy.</a></div>
+                </div>
+              </label>
+            </td>
+
+          </tr>
+
+          <tr id="coupon-layout">
+            <td colspan="2">
+              <input type="text" name="coupon_apply" class="ct-coupon-input-text hide_coupon_textbox" placeholder="Have a promocode?"
+                maxlength="5">
+              <a href="#" class="ct-apply-coupon ct-link hide_coupon_textbox">Apply</a>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+
+              <div class="row select-time-slot" style="margin: 10px 0" id="payment-types-option">
+                <button class="col-50 button button-raised button-fill button-round" value="Cash">Cash</button>
+                      <button class="col-50 button button-raised button-fill button-round" value="Online">Online</button>
+                        
+              </div>
+
+              <ul>
+                <li><a class="item-link list-button whole-app-btn" href="#" id="pay-now-button">Pay Now</a></li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="popup popup-about">
+    <div class="card mb-15">
+      <div class="card-header heading-text">Terms And Condition</div>
+      <div class="clearfix"></div>
+      <div class="about-us-layout card-inner-padding">
+        <p class="about-us-text">
+          Welcome to the Yup Serve Website. You are currently on the Terms of Use page of
+          YupServe.com (mentioned as 'YupServe'/'Web Site'/'we', 'us' /'Company' hereon).
+          YupServe.com is a provider for household services and enables the connection between
+          individuals seeking to obtain services (“YupServe Customer/User”) and/or individuals
+          seeking to provide services (“YupServe Service Provider”). YupServe Customers are
+          hereinafter referred to as “Users” and individually as “User”.
+          Those certain services requested by the YupServe Customer, which are to be
+          completed by the YupServe Service Provider, are hereinafter referred to as
+          “Services”.</p>
+        <p class="about-us-text">We strongly recommend that you go through the Terms
+          of use mentioned on this page attentively before browsing the content on the
+          other pages of the website or conducting any activity on it.</p>
+        <p class="about-us-text">PLEASE READ THE TERMS OF USE THOROUGHLY AND CAREFULLY. The terms and conditions set forth below ("Terms of Use") and
+        the Privacy Policy (as defined below) constitute a legally-binding agreement between YupServe operating from its
+        Bhubaneswar Office and you. These Terms of Use contain provisions that define your limits, legal rights and obligations
+        with respect to your use of and participation in the YupServe website and mobile application, including the classified
+        advertisements, forums, various email functions and Internet links, and all content and YupServe services available
+        through the domain and sub-domains of YupServe located at http://yupserve.com/.com and the online transactions between
+        those users of the Website who are offering services and those users of the Website who are obtaining services (each, a
+        "Service User") through the Website (such services, collectively, the "Services"). The Terms of Use described below
+        incorporate the Privacy Policy and apply to all users of the Website, including users who are also contributors of
+        video content, information, private and public messages, advertisements, and other materials or Services on the
+        Website.
+        </p>
+      </div>
+    </div>
+
+    <div class="card mt-30 mb-15">
+      <div class="card-header heading-text">Privacy Policy</div>
+      <div class="clearfix"></div>
+      <div class="about-us-layout card-inner-padding">
+        <p class="about-us-text">
+          YupServe.com is committed to protecting privacy of personal information
+          shared by you on this Website.
+
+          By visiting our Website, you accept our Privacy Policy.
+          In case you do not agree to the terms of this Privacy Policy as mentioned
+          below, we advise you not to use the Website.
+          We might modify or amend our Privacy Policy from time to time without
+          any notice. Your continued use of YupServe.com, post these
+          changes, will mean that you accept these changes.
+
+          As per our Privacy Policy, we do not sell, barter,
+          rent or give your personal information to any company outside of
+          YupServe.com and its parent company YupServe Dotcom Pvt. Ltd.,
+          except for as the terms mentioned below.</p>
+
+      </div>
+    </div>
+    <!-- Close Popup -->
+    <p><a class="link popup-close" href="#" id="popup_close_button">Close</a></p>
+  </div>
+
+
+</div>

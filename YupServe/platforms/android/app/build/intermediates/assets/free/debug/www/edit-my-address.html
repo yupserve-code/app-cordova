@@ -1,0 +1,99 @@
+<div class="page" data-name="edit-my-address">
+      <div class="navbar">
+            <div class="navbar-inner">
+                  <div class="left">
+                        <a href="/my-address-list/" class="link">
+                              <i class="icon icon-back"></i>
+                        </a>
+                  </div>
+                  <div class="title">Edit Address</div>
+            </div>
+      </div>
+      <!-- page-content has additional login-screen content -->
+      <div class="page-content">
+            <div class="login-screen-content">
+                  <div class="login-logo" style="margin-bottom: 20px; margin-top: 30px;">
+                        <img src="images/logo-2.png" />
+                  </div>
+                  <!-- Login form -->
+                  <form id="signupForm" class="form-ajax-submit">
+                        <div class="list">
+                              <ul>
+                                    <li class="item-content item-input">
+                                          <div class="item-inner">
+                                                <div class="item-title item-floating-label">Address</div>
+                                                <div class="item-input-wrap wrap">
+                                                      <textarea rows="2" cols="100" class="resizable" id="useraddress" placeholder="Enter street address"
+                                                            maxlength="80"></textarea>
+                                                </div>
+                                                <div class="label-1">
+                                                      <span id="address-invalid" class="hidden mob-helpers">
+                                                            <p class="fa fa-times invalid" id="address-error">Enter
+                                                                  your
+                                                                  address.</p>
+                                                      </span>
+                                                </div>
+                                          </div>
+                                    </li>
+                                    <li class="item-content item-input">
+                                          <div class="item-inner">
+                                                <div class="item-title item-floating-label">PIN Code</div>
+                                                <div class="item-input-wrap">
+                                                      <input type="number" id="userPIN" placeholder="Enter PIN code"
+                                                            maxlength="6" oninput="javascript: if (this.value.length > 6) this.value = this.value.slice(0, 6);">
+                                                </div>
+                                                <div class="label-1">
+                                                      <span id="pin-invalid" class="hidden mob-helpers">
+                                                            <p class="fa fa-times invalid" id="pin-error">Enter your
+                                                                  PIN
+                                                                  code.</p>
+                                                      </span>
+                                                </div>
+                                          </div>
+                                    </li>
+                                    <li class="item-content item-input">
+                                          <div class="item-inner">
+                                                <div class="item-title item-floating-label">City</div>
+                                                <div class="item-input-wrap">
+                                                      <input type="text" id="usercity" placeholder="Enter your city name"
+                                                            maxlength="20" readonly>
+                                                </div>
+                                                <div class="label-1">
+                                                      <span id="city-invalid" class="hidden mob-helpers">
+                                                            <p class="fa fa-times invalid" id="city-error">Enter your
+                                                                  city
+                                                                  name.</p>
+                                                      </span>
+                                                </div>
+                                          </div>
+                                    </li>
+                                    <li class="item-content item-input">
+                                          <div class="item-inner">
+                                                <div class="item-title item-floating-label">State</div>
+                                                <div class="item-input-wrap">
+                                                      <input type="text" id="userstate" placeholder="Enter state name"
+                                                            maxlength="20" readonly>
+                                                </div>
+                                                <div class="label-1">
+                                                      <span id="state-invalid" class="hidden mob-helpers">
+                                                            <p class="fa fa-times invalid" id="state-error">Enter your
+                                                                  state
+                                                                  name.</p>
+                                                      </span>
+                                                </div>
+                                          </div>
+                                    </li>
+                              </ul>
+                        </div>
+                        <div class="list">
+
+                              <ul>
+                                    <li>
+                                          <button class="signup-button-container-layout item-link list-button whole-app-btn signup-button" id="update-btn">Update</button>
+                                    </li>
+                              </ul>
+                        </div>
+                  </form>
+            </div>
+      </div>
+</div>

@@ -1,0 +1,61 @@
+{
+  "_from": "cordova-plugin-restartapp",
+  "_id": "cordova-plugin-restartapp@0.0.1",
+  "_inBundle": false,
+  "_integrity": "sha512-a27uSBi75M/sRnPtPRo+Ywc2PJq3mhggkOdTuLwWAw8isapzwgReWGmnfCiXcq2eRiRP3ssU3Y1WEbAKZO7rSQ==",
+  "_location": "/cordova-plugin-restartapp",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-restartapp",
+    "name": "cordova-plugin-restartapp",
+    "escapedName": "cordova-plugin-restartapp",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-restartapp/-/cordova-plugin-restartapp-0.0.1.tgz",
+  "_shasum": "af5ad84dd1d2c24e809ebe75f027f1f9b7859d39",
+  "_spec": "cordova-plugin-restartapp",
+  "_where": "E:\\PhoneGap\\YupServe",
+  "author": {
+    "name": "huangang",
+    "email": "huangang.zhang@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/huangang/cordova-plugin-restartapp/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-restartapp",
+    "platforms": [
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "navigator.app.restartApp on Android",
+  "homepage": "https://github.com/huangang/cordova-plugin-restartapp#readme",
+  "keywords": [
+    "cordova",
+    "restart",
+    "terminate",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "license": "Apache-2.0",
+  "main": "www/cordova-plugin-restartapp.js",
+  "name": "cordova-plugin-restartapp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huangang/cordova-plugin-restartapp.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.1"
+}

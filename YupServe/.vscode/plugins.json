@@ -1,0 +1,1 @@
+{"plugins":["cordova-plugin-whitelist","cordova-plugin-console","cordova-plugin-network-information","cordova-plugin-fcm","cordova-plugin-statusbar","cordova-plugin-file-transfer","cordova-plugin-file","cordova-plugin-inappbrowser","cordova-plugin-compat","com.payumoney.sdkui.cordova","cordova-plugin-zip","cordova-plugin-file-md5","cordova-plugin-splashscreen"]}
