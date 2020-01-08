@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <!-- Required meta tags-->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; 'unsafe-inline'; media-src *" />  -->
+
+      <!-- Allows XHRs only over HTTPS on the same domain. -->
+      <!--  <meta http-equiv="Content-Security-Policy" content="default-src 'self' http:">  -->
+
+      <!-- Color theme for statusbar -->
+      <meta name="theme-color" content="#2196f3">
+
+      <!-- Your app title -->
+      <title>Yupserve</title>
+
+      <!-- Path to Framework7 Library CSS -->
+      <link rel="stylesheet" href="css/framework7.min.css">
+      <link rel="stylesheet" href="css/material-icons.css">
+      <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css'>
+
+      <!-- <link rel="stylesheet" href="css/swiper.min.css"> -->
+      <!-- <link rel="stylesheet" href="css/slick-slider.css" type="text/css" media="screen" /> -->
+      <!-- Path to your custom app styles-->
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/framework7-icons.css">
+
+</head>
+
+<body>
+      <!-- App root element -->
+      <div id="app">
+            <!-- Statusbar overlay -->
+            <div class="statusbar"></div>
+
+            <!-- Left panel, let it be with reveal effect -->
+            <div class="panel panel-left panel-cover">
+                  <div class="logo-profile">
+                        <div class="user-profile-image">
+                              <img src="images/man.png" />
+                        </div>
+                        <h2 id="user-name"></h2>
+                  </div>
+                  <!-- List View-->
+                  <div class="list dashboard">
+                        <ul>
+                              <li>
+                                    <a href="#" class="item-link item-content panel-close" id="home-drawer-click">
+                                          <div class="item-media"><img src="images/house-outline.svg" width="20"></div>
+                                          <div class="item-inner">
+                                                <div class="item-title">Home</div>
+                                          </div>
+                                    </a>
+                              </li>
+                              <li>
+                                    <a href="#" class="item-link item-content panel-close" id="my-account-click">
+                                          <div class="item-media"><img src="images/avatar.svg" width="20"></div>
+                                          <div class="item-inner">
+                                                <div class="item-title">My Account</div>
+                                          </div>
+                                    </a>
+                              </li>
+                              <li>
+                                    <a href="#" class="item-link item-content panel-close" id="my-booking-click">
+                                          <div class="item-media"><img src="images/bookings.svg" width="20"></div>
+                                          <div class="item-inner">
+                                                <div class="item-title">My Bookings</div>
+                                          </div>
+                                    </a>
+                              </li>
+                              <li>
+                                    <a href="#" class="item-link item-content panel-close" id="my-notification-click">
+                                          <div class="item-media"><img src="images/notification.svg" width="20"></div>
+                                          <div class="item-inner">
+                                                <div class="item-title">Notifications</div>
+                                          </div>
+                                    </a>
+                              </li>
+                              <li class="logged" id="login_class">
+                                    <a href="#" class="item-link item-content panel-close" id="home-login-click">
+                                          <div class="item-media"><img id="log-in-image" src="images/login.svg" width="20"></div>
+                                          <div class="item-inner">
+                                                <div class="item-title" id="log-in--text">Login</div>
+                                          </div>
+                                    </a>
+                              </li>
+                              <li class="log" id="logout_class">
+                                    <a href="#" class="item-link item-content panel-close" id="logout-click">
+                                          <div class="item-media"><img id="log-out-image" src="images/logout.svg" width="20"></div>
+                                          <div class="item-inner">
+                                                <div class="item-title" id="log-out-text">Logout</div>
+                                          </div>
+                                    </a>
+                              </li>
+                        </ul>
+                  </div>
+            </div>
+
+            <!-- Your main view, should have "view-main" class -->
+            <div class="view view-main">
+                  <!-- Initial Page, "data-name" contains page name -->
+                  <div data-name="home" class="page">
+
+                        <!-- Top Navbar -->
+                        <div class="navbar">
+
+                              <div class="navbar-inner">
+                                    <div class="left">
+                                          <a href="#" class="link panel-open">
+                                                <i class="material-icons">menu</i>
+                                          </a>
+                                    </div>
+                                    <div class="title">Home</div>
+                                    <div class="right">
+                                          <a href="#" class="link icon-only" id="notification-icon-header">
+                                                <i class="icon f7-icons ios-only">bell<span class="badge color-red">..</span></i>
+                                                <i class="icon material-icons md-only">notifications_none<span class="badge color-red"
+                                                            id="badge-layout"></span></i>
+                                          </a>
+                                    </div>
+                              </div>
+                        </div>
+                        <!-- <div class="navbar">
+                              <div class="navbar-inner">
+                                    <div class="title">Home</div>
+                              </div>
+                        </div> -->
+                        <!-- Scrollable page content -->
+                        <div class="page-content" id="home-main-layout">
+                              <!-- <p>Page content goes here</p> -->
+                              <!-- Link to another page -->
+                             <!--  <div data-speed="900" data-pagination='{"el": ".swiper-pagination"}' data-space-between="50"
+                                    class="swiper-container demo-swiper" id="banner-swiper">
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-wrapper">
+                                          <div class="swiper-slide">
+                                                <img src="images/slider-1.jpg" />
+                                          </div>
+                                          <div class="swiper-slide">
+                                                <img src="images/slider-2.jpg" />
+                                          </div>
+                                          <div class="swiper-slide">
+                                                <img src="images/slider-3.jpg" />
+                                          </div>
+                                          <div class="swiper-slide">
+                                                <img src="images/slider-4.jpg" />
+                                          </div>
+                                          <div class="swiper-slide">
+                                                <img src="images/slider-5.jpg" />
+                                          </div>
+                                    </div>
+                              </div> -->
+                              <!--  <div data-pagination='{"el": ".swiper-pagination"}' data-space-between="10" data-loop="true"
+                                    data-simulate-touch="true" data-slides-per-view="auto" data-centered-slides="true"
+                                    class="swiper-container swiper-init demo-swiper demo-swiper-auto">
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-wrapper">
+                                          <div class="swiper-slide">
+                                                <img src="images/slider-1.jpg" />
+                                          </div>
+                                          <div class="swiper-slide">
+                                                <img src="images/slider-2.jpg" />
+                                          </div>
+                                          <div class="swiper-slide">
+                                                <img src="images/slider-3.jpg" />
+                                          </div>
+                                          <div class="swiper-slide">
+                                                <img src="images/slider-4.jpg" />
+                                          </div>
+                                          <div class="swiper-slide">
+                                                <img src="images/slider-5.jpg" />
+                                          </div>
+                                    </div>
+                              </div> -->
+                              <div class="clearfix"></div>
+                              <div class="home-pin-layout">
+                                    <div class="row">
+                                          <div class="col x">
+                                                <select type="select" class="sel-address" placeholder="Select City">
+                                                      <!-- <option>Select City</option> -->
+                                                      <option selected>Bhubaneswar</option>
+                                                </select>
+                                          </div>
+
+                                          <div class="col">
+                                                <!--  <input type="text" class="en-pin"  id="pincode" placeholder="Enter Pin Code"
+                                                      maxlength="6"> -->
+                                                <input type="number" class="en-pin" id="pincode" placeholder="Check availability"
+                                                      maxlength="6" oninput="javascript: if (this.value.length > 6) this.value = this.value.slice(0, 6);">
+                                          </div>
+
+                                    </div>
+                                    <!-- <div class="home-pin-error" id="pinError">Pin error</div> -->
+                              </div>
+
+                              <div class="clearfix"></div>
+                              <div class="page-align">
+                                    <div class="card clearfix elevation-1">
+                                          <div class="card-header heading-text">Our Services <a href="#" id="more-button-click"
+                                                      class="more-button">More</a></div>
+                                          <div class="card-content card-content-padding"></div>
+                                          <div class="dashboard-menu">
+                                                <!-- <div class="heading-text">Our Services <a href="#">More...</a></div> -->
+                                                <div class="clearfix"></div>
+                                                <div class="row" id="home_service_list">
+                                                      <div class="row" id="home_service_list"></div>
+
+                                                      <!-- <div class="col-33">
+                                                            <a href="/service-sub-list/">
+                                                                  <div class="card menu-box">
+                                                                        <img src="images/cleaning-service.svg">
+                                                                        <p class="service-name">Cleaning</p>
+
+                                                                  </div>
+                                                            </a>
+                                                      </div>
+                                                      <div class="col-33">
+                                                            <a href="/service-sub-list/">
+                                                                  <div class="card menu-box">
+                                                                        <img src="images/no-insects.svg">
+                                                                        <p class="service-name">Pest Control</p>
+
+                                                                  </div>
+                                                            </a>
+                                                      </div>
+                                                      <div class="col-33">
+                                                            <a href="/service-sub-list/">
+                                                                  <div class="card menu-box">
+                                                                        <img src="images/technical-support.svg">
+                                                                        <p class="service-name">Appliance Repair</p>
+
+                                                                  </div>
+                                                            </a>
+                                                      </div>
+                                                      <div class="col-33">
+                                                            <a href="/service-sub-list/">
+                                                                  <div class="card menu-box">
+                                                                        <img src="images/paint-roller.svg">
+                                                                        <p class="service-name">Painting</p>
+
+                                                                  </div>
+                                                            </a>
+                                                      </div>
+                                                      <div class="col-33">
+                                                            <a href="/service-sub-list/">
+                                                                  <div class="card menu-box">
+                                                                        <img src="images/plumbing.svg">
+                                                                        <p class="service-name">Plumbing</p>
+
+                                                                  </div>
+                                                            </a>
+                                                      </div>
+                                                      <div class="col-33">
+                                                            <a href="/service-sub-list/">
+                                                                  <div class="card menu-box">
+                                                                        <img src="images/toolbox.svg">
+                                                                        <p class="service-name">Carpentry</p>
+
+                                                                  </div>
+                                                            </a>
+                                                      </div> -->
+                                                </div>
+                                          </div>
+                                    </div>
+
+                                    <div class="clearfix"></div>
+
+                                    <div class="card clearfix elevation-1 mt-30 mb-15">
+                                                <div class="card-header heading-text">How It Works</div>
+
+                                                <div class="card-content card-content-padding"></div>
+
+
+                                                <div class="clearfix"></div>
+                                                <div class="list media-list card-inner-padding">
+                                                      <ul class="my-booking">
+                                                            <p style="margin-top:10px; color: #000 !important">Choose
+                                                                  from
+                                                                  our wide range of services, book and stay relax. Our
+                                                                  expert
+                                                                  service team will reach you at your doorstep
+                                                                  and ensure your satisfaction.</p>
+                                                            <li>
+                                                                  <a href="#" class="item-link item-content">
+                                                                        <div class="item-media"><img class="how-img"
+                                                                                    src="images/contract.svg" /></div>
+                                                                        <div class="item-inner">
+                                                                              <div class="item-title-row">
+                                                                                    <div class="item-order-number ti">Book
+                                                                                          Services</div>
+                                                                              </div>
+                                                                              <p>Select date & time to confirm your
+                                                                                    booking.</p>
+                                                                        </div>
+                                                                  </a>
+                                                            </li>
+
+                                                            <li>
+                                                                  <a href="#" class="item-link item-content">
+                                                                        <div class="item-media"><img class="how-img"
+                                                                                    src="images/payment-method.svg" /></div>
+                                                                        <div class="item-inner">
+                                                                              <div class="item-title-row">
+                                                                                    <div class="item-order-number ti">Pay</div>
+                                                                              </div>
+                                                                              <p>Before or after the service is done.</p>
+                                                                        </div>
+                                                                  </a>
+                                                            </li>
+                                                            <li>
+                                                                  <a href="#" class="item-link item-content">
+                                                                        <div class="item-media"><img class="how-img"
+                                                                                    src="images/deck-chair.svg" /></div>
+                                                                        <div class="item-inner">
+                                                                              <div class="item-title-row">
+                                                                                    <div class="item-order-number ti">Relax</div>
+                                                                              </div>
+                                                                              <p>While your home service gets done.</p>
+                                                                        </div>
+                                                                  </a>
+                                                            </li>
+
+                                                            <li>
+                                                                  <a href="#" class="item-link item-content">
+                                                                        <div class="item-media"><img class="how-img"
+                                                                                    src="images/toll_free_colorful.svg" /></div>
+                                                                        <div class="item-inner">
+                                                                              <div class="item-title-row">
+                                                                                    <div class="item-order-number ti">24/7
+                                                                                          Customer Service</div>
+                                                                              </div>
+                                                                              <p>Dial 1800-123-3959 if any query.</p>
+                                                                        </div>
+                                                                  </a>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                          </div>                               
+                              </div>
+                        </div>
+                  </div>
+            </div>
+
+            <!--Cordova Js Link-->
+            <script type="text/javascript" src="cordova.js"></script>
+            <script type="text/javascript" src="js/PayU-Helper.js"></script>
+            <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+            <!-- Path to Framework7 Library JS-->
+            <script type="text/javascript" src="js/framework7.min.js"></script>
+            <!-- <script src='js/swiper.min.js'></script> -->
+            <!-- Path to your app js-->
+            <script type="text/javascript" src="js/my-app.js"></script>
+            <script type="text/javascript" src="js/sha.js"></script>
+            <script type="text/javascript" src="js/helper/api-connection.js"></script>
+            <script type="text/javascript" src="js/activity/my-address-list.js"></script>
+            <script type="text/javascript" src="js/activity/edit-my-address.js"></script>
+
+</body>
+
+</html>

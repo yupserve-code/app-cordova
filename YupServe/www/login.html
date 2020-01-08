@@ -1,0 +1,59 @@
+<div class="page no-navbar no-toolbar no-swipeback" data-name="login">
+
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="left">
+        <a href="#" class="link" id="login-back-button">
+          <i class="icon icon-back"></i>
+        </a>
+      </div>
+      <div class="title">Login</div>
+    </div>
+  </div>
+
+  <div class="page-content login-two buttom-bg">
+    <div class="page-content login-screen-content">
+      <div class="login-logo">
+        <img src="images/logo-2.png" />
+        <p class="login-info">Please login to continue</p>
+      </div>
+      <form id="loginForm" class="form-ajax-submit">
+        <div class="list">
+          <ul>
+            <li class="item-content item-input">
+              <div class="item-inner login-box-width">
+                <div class="item-title item-label ">Enter Your Mobile Number</div>
+                <div class="item-input-wrap country-code">
+                  <input type="number" id="usermobile" placeholder="" oninput="javascript: if (this.value.length > 10) this.value = this.value.slice(0, 10);">
+                </div>
+                <div class="label-1">
+                  <span id="mobile-invalid" class="hidden mob-helpers">
+                    <p class="fa fa-times invalid" id="mobile-error">Enter your 10
+                      digit mobile number.</p>
+                  </span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="list">
+          <!-- <ul>
+            <li>
+               <div class="signup-button-container-layout item-content item-link list-button whole-app-btn"><button class="login-button">Proceed</button></div>
+               <a class="item-link list-button whole-app-btn" class="login-button">Proceed</a>
+            </li>
+          </ul> -->
+
+          <ul>
+            <li>
+              <button class="signup-button-container-layout item-link list-button whole-app-btn login-button">Proceed</button>
+            </li>
+          </ul>
+
+        </div>
+      </form>
+      <div class="block-footer loogin-footer">
+        <p class="link login-screen-close">Don't have an account? <a href="#" id="login-screen-signup-button"> Register Here</a></p>
+      </div>
+    </div>
+  </div>

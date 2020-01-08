@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "29864472862",
+    "firebase_url": "https://yupserve-516b8.firebaseio.com",
+    "project_id": "yupserve-516b8",
+    "storage_bucket": "yupserve-516b8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:29864472862:android:a86c6b3c9c64bcb3",
+        "android_client_info": {
+          "package_name": "com.ntspl.yupserve"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "29864472862-0alknvopn5aud45mng1u57a57bvghi5m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0zAeG7cbPMeFU0MITJw20KLnAK2gVu7U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:29864472862:android:7084fa91b4bd3635",
+        "android_client_info": {
+          "package_name": "com.ntspl.yupserveserviceboy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "29864472862-0alknvopn5aud45mng1u57a57bvghi5m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0zAeG7cbPMeFU0MITJw20KLnAK2gVu7U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

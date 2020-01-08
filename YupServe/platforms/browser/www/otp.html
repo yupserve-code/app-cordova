@@ -1,0 +1,41 @@
+<div class="page" data-name="otp">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="title">Verify OTP</div>
+    </div>
+  </div>
+
+  <div class="page-content login-screen-content">
+    <img class="otp-image" src="images/verifyotp.svg" />
+    <p class="otp-text" id="reg-mob-number"></p>
+    <p class="otp-text">Enter 4 digit code</p>
+    <div id="divOuter">
+      <div id="divInner">
+        <input id="partitioned" type="number" maxlength="4" minlength="4" 
+        oninput="javascript: if (this.value.length > 4) this.value = this.value.slice(0, 4);"/>
+      </div>
+    </div>
+    <div class="label-1" style="text-align: center;">
+      <span id="otp-invalid" class="hidden mob-helpers">
+        <p class="fa fa-times invalid" id="otp-error">Enter your 4
+          digit OTP.</p>
+      </span>
+    </div>
+
+    <div class="list">
+      <ul>
+        <li>
+          <button class="signup-button-container-layout item-link list-button whole-app-btn otp-submit">Submit</button>
+        </li>
+      </ul>
+    </div>
+    <div class="block-footer loogin-footer mt-50">
+      <p class="link login-screen-close">Didn't receive the OTP? <a href="#" class="resend-onclick"> Resend Now</a></p>
+    </div>
+
+  </div>
+</div>
+
+<script>
+
+</script>

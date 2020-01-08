@@ -1,0 +1,12 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "YupServe",
+  "short_name": "YupServe",
+  "version": "com.ntspl.yupserve",
+  "description": "On demand service.",
+  "author": "NTSPL mobile application Team",
+  "icons": [],
+  "start_url": "index.html",
+  "theme_color": "#2196f3"
+}

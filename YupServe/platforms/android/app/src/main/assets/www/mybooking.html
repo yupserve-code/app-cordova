@@ -1,0 +1,77 @@
+<div class="page" data-name="mybooking">
+      <div class="navbar">
+            <div class="navbar-inner">
+                  <div class="left">
+                  <a href="#" class="link" id="my-booking-back-button">
+                              <i class="icon icon-back"></i>
+                        </a>
+                  </div>
+                  <div class="title">My Bookings</div>
+                  <!-- <div class="right">
+                        <a href="/notification/" class="link icon-only">
+                              <i class="icon f7-icons ios-only">bell<span class="badge color-red">..</span></i>
+                              <i class="icon material-icons md-only">notifications_none<span class="badge color-red">12</span></i>
+                        </a>
+                  </div> -->
+                  <div class="subnavbar" id="booking-list-search-bar">
+                        <!-- Searchbar with auto init -->
+                        <form class="searchbar">
+                              <div class="searchbar-inner">
+                                    <div class="searchbar-input-wrap">
+                                          <input type="search" placeholder="Search">
+                                          <i class="searchbar-icon"></i>
+                                          <span class="input-clear-button"></span>
+                                    </div>
+                                    <span class="searchbar-disable-button">Cancel</span>
+                              </div>
+                        </form>
+                  </div>
+            </div>
+      </div>
+
+      <!-- FAB Right Bottom (Orange) -->
+      <div class="fab fab-right-bottom color-orange" id="booking-fab-button">
+            <a href="/filters/" class=""><i class="material-icons">filter_list</i><i class="material-icons">close</i></a>
+            <!-- <div class="fab-buttons fab-buttons-top">
+                  <a class="fab-label-button" href="#"><span>1</span><span class="fab-label">Action1</span></a>
+                  <a class="fab-label-button" href="#"><span>2</span><span class="fab-label">Action2</span></a>
+            </div> -->
+      </div>
+
+      <div class="page-content infinite-scroll-content ptr-content" data-ptr-distance="55" data-infinite-distance="100" id="booking-list-main-layout">
+            <!-- Default pull to refresh preloader-->
+            <div class="ptr-preloader" id="swipe-refresh-pre-image">
+                  <div class="preloader"></div>
+                  <div class="ptr-arrow"></div>
+            </div>
+
+
+            <!-- Searchbar backdrop -->
+            <div class="searchbar-backdrop"></div>
+
+            <div class="card clearfix mb-15 mt-20" id="booking-list-card">
+                  <div class="list media-list  card-inner-padding searchbar-found">
+                        <!-- search target list -->
+                        <ul class="my-booking" id="my-booking">
+                              
+
+                        </ul>
+                        <!-- search target list -->
+                  </div>
+                  <!-- Nothing found message -->
+                  <div class="block searchbar-not-found">
+                        <div class="block-inner">Nothing found</div>
+                  </div>
+            </div>
+
+            <div class="empty-list" id="empty-booking-screen">
+                  <img src="images/gift.svg" />
+                  <p class="">Your booking list is empty</p>
+            </div>
+
+            <div class="preloader infinite-scroll-preloader color-multi"></div>
+      </div>  
+</div>
+
+<!--Cordova Js Link-->
+<script type="text/javascript" src="cordova.js"></script>

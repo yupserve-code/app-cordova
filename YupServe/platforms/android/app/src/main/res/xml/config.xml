@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.ntspl.yupserve" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="NetworkStatus">
+        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+    </feature>
+    <feature name="FCMPlugin">
+        <param name="android-package" value="com.gae.scaffolder.plugin.FCMPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="StatusBar">
+        <param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="File">
+        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
+        <param name="onload" value="true" />
+    </feature>
+    <allow-navigation href="cdvfile:*" />
+    <feature name="FileTransfer">
+        <param name="android-package" value="org.apache.cordova.filetransfer.FileTransfer" />
+    </feature>
+    <feature name="PayUmoneyPnP">
+        <param name="android-package" value="com.payumoney.sdkui.cordova.PayUmoneyPnP" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Device">
+        <param name="android-package" value="org.apache.cordova.device.Device" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
+    <feature name="RestartApp">
+        <param name="android-package" value="org.apache.cordova.restartapp.RestartApp" />
+    </feature>
+    <name>YupServe</name>
+    <description>
+        On demand service.
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        NTSPL mobile application Team
+    </author>
+    <content src="index.html" />
+    <access origin="http://yupserve.com" />
+    <access origin="https://yupserve.com" />
+    <allow-navigation href="http://yupserve.com" />
+    <allow-navigation href="https://yupserve.com" />
+    <allow-navigation href="data:*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <access origin="*" />
+    <allow-intent href="market:*" />
+    <icon qualifier="ldpi" src="res/icons/android/drawable-ldpi-icon.png" />
+    <icon qualifier="mdpi" src="res/icons/android/drawable-mdpi-icon.png" />
+    <icon qualifier="hdpi" src="res/icons/android/drawable-hdpi-icon.png" />
+    <icon qualifier="xhdpi" src="res/icons/android/drawable-xhdpi-icon.png" />
+    <icon qualifier="xxhdpi" src="res/icons/android/drawable-xxhdpi-icon.png" />
+    <icon qualifier="xxxhdpi" src="res/icons/android/drawable-xxxhdpi-icon.png" />
+    <splash qualifier="land-ldpi" src="res/screens/android/splash-port-ldpi.png" />
+    <splash qualifier="land-mdpi" src="res/screens/android/splash-port-mdpi.png" />
+    <splash qualifier="land-hdpi" src="res/screens/android/splash-port-hdpi.png" />
+    <splash qualifier="land-xhdpi" src="res/screens/android/splash-port-xhdpi.png" />
+    <splash qualifier="land-xxhdpi" src="res/screens/android/splash-port-xxhdpi.png" />
+    <splash qualifier="land-xxxhdpi" src="res/screens/android/splash-port-xxxhdpi.png" />
+    <splash qualifier="port-ldpi" src="res/screens/android/splash-port-ldpi.png" />
+    <splash qualifier="port-mdpi" src="res/screens/android/splash-port-mdpi.png" />
+    <splash qualifier="port-hdpi" src="res/screens/android/splash-port-hdpi.png" />
+    <splash qualifier="port-xhdpi" src="res/screens/android/splash-port-xhdpi.png" />
+    <splash qualifier="port-xxhdpi" src="res/screens/android/splash-port-xxhdpi.png" />
+    <splash qualifier="port-xxxhdpi" src="res/screens/android/splash-port-xxxhdpi.png" />
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="StatusBarOverlaysWebView" value="true" />
+    <preference name="StatusBarBackgroundColor" value="##ff9800" />
+    <preference name="android-minSdkVersion" value="14" />
+    <preference name="AndroidLaunchMode" value="singleTop" />
+    <preference name="KeepRunning" value="true" />
+</widget>

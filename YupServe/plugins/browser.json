@@ -1,0 +1,49 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-console": {
+      "PACKAGE_NAME": "com.ntspl.yupserve"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.ntspl.yupserve"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.ntspl.yupserve"
+    },
+    "cordova-plugin-fcm": {
+      "PACKAGE_NAME": "com.ntspl.yupserve"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.ntspl.yupserve"
+    },
+    "cordova-plugin-file-transfer": {
+      "PACKAGE_NAME": "com.ntspl.yupserve"
+    },
+    "com.payumoney.sdkui.cordova": {
+      "PACKAGE_NAME": "com.ntspl.yupserve"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.ntspl.yupserve"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.ntspl.yupserve"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.ntspl.yupserve"
+    },
+    "cordova-plugin-restartapp": {
+      "PACKAGE_NAME": "com.ntspl.yupserve"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.ntspl.yupserve"
+    }
+  }
+}

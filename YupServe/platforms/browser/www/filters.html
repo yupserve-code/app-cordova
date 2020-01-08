@@ -1,0 +1,113 @@
+<div class="page" data-name="filters">
+      <!-- <div class="navbar">
+            <div class="navbar-inner">
+                  <div class="left">
+                        <a href="/home/" class="link">
+                              <i class="icon icon-back"></i>
+                        </a>
+                  </div>
+                  <div class="title">My Booking</div>
+                  <div class="right">
+                        <a href="/notification/" class="link icon-only">
+                              <i class="icon f7-icons ios-only">bell<span class="badge color-red">..</span></i>
+                              <i class="icon material-icons md-only">notifications_none<span class="badge color-red">12</span></i>
+                        </a>
+                  </div>
+            </div>
+      </div> -->
+      <div class="navbar">
+            <div class="navbar-inner">
+                  <div class="left">
+                        <a href="/mybooking/" class="link">
+                              <i class="icon icon-back"></i>
+                        </a>
+                  </div>
+                  <div class="title">Filters</div>
+            </div>
+      </div>
+
+
+      <div class="page-content gray-bg filters">
+            <!-- Searchbar backdrop -->
+            <div class="searchbar-backdrop"></div>
+
+            <div class="card clearfix mb-15 mt-20 ">
+
+                  <div class="card-header  head-text1">Booking Details</div>
+                  <div class="card-content card-content-padding">
+                        <div class="list media-list  card-inner-padding searchbar-found">
+                              <ul class="booking-id">
+                                    <li class="item-content item-input">
+                                          <div class="item-inner">
+                                                <div class="item-title item-floating-label">Booking ID</div>
+                                                <div class="item-input-wrap">
+                                                      <input type="text" id="filter-booking-id" placeholder="Enter your booking ID"maxlength="6" oninput="javascript: if (this.value.length > 4) this.value = this.value.slice(0, 4);">
+                                                </div>
+                                                <div class="label-1">
+                                                      <span id="first-name-invalid" class="hidden mob-helpers">
+                                                            <p class="fa fa-times invalid" id="first-name-error">Enter
+                                                                  your first name.</p>
+                                                      </span>
+                                                </div>
+                                          </div>
+                                    </li>
+                                    <li>
+                                          <select name="services" id="service-list-dropdown">
+                                          </select>
+                                    </li>
+
+                                    <li>
+                                          <select name="services" id="status-list-dropdown">
+                                          </select>
+                                    </li>
+                                   
+                              </ul>
+                        </div>
+                  </div>
+
+                  <div class="date-mrg">
+
+                        <div class="card-header head-text">Date Range</div>
+                        <div class="card-content card-content-padding ">
+
+                              <div class="list no-hairlines-md">
+                                    <ul class="data-range-filter">
+                                          <li>
+                                                <div class="item-content item-input">
+                                                      <div class="item-inner">
+                                                            <div class="item-input-wrap">
+                                                                  <input type="text" placeholder="From date" id="filter-from-date-calendar-modal" />
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                          </li>
+                                          <li>
+                                                <div class="item-content item-input">
+                                                      <div class="item-inner">
+                                                            <div class="item-input-wrap">
+                                                                  <input type="text" placeholder="To date" id="filter-to-date-calendar-modal" />
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                          </li>
+                                    </ul>
+                              </div>
+                        </div>
+
+                  </div>
+                  <div class="toolbar toolbar-bottom-md custom filter-toolbar">
+                        <div class="toolbar-inner">
+                              <a href="#" class="link"><button class="col button button-fill color-red">Clear</button></a>
+                              <a href="#" class="link"><button class="col button button-fill color-green" id="apply-button">Apply</button></a>
+
+                        </div>
+                  </div>
+
+            </div>
+            <!-- Nothing found message -->
+            <div class="block searchbar-not-found">
+                  <div class="block-inner">Nothing found</div>
+            </div>
+      </div>
+</div>
+</div>
